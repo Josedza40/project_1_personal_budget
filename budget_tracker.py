@@ -36,7 +36,14 @@ while True:
         transactions.append({"type": "expense", "category": expense_category, "description": description, "amount": amount})
         print("Expense added successfully.")
     elif choice == "3":
-        print("View Transaction history")
+        if not transactions:
+            print("No transactions found.")
+        else:
+            for transaction in transactions:
+                if transaction["type"] == "income":
+                    print(f"Source: {transaction['source']}, Amount: ${transaction['amount']:.2f}")
+                elif transaction["type"] == "expense":
+                    print(f"Category: {transaction['category']}, Description: {transaction['description']}, Amount: ${transaction['amount']:.2f}")
     elif choice == "4":
         print("View spending by category")
     elif choice == "5":
