@@ -29,9 +29,12 @@ while True:
         amount = float(input("Enter the income amount: "))
         transactions.append({"type": "income", "source": source, "amount": amount})
         print("Income added successfully.")
-        print(transactions)
     elif choice == "2":
-        print("Please add expense")
+        expense_category = input("Enter the expense category (e.g., Food, Rent, Utilities): ").strip()
+        description = input("Give a description of the expense: ").strip()
+        amount = float(input("Enter the expense amount: "))
+        transactions.append({"type": "expense", "category": expense_category, "description": description, "amount": amount})
+        print("Expense added successfully.")
     elif choice == "3":
         print("View Transaction history")
     elif choice == "4":
