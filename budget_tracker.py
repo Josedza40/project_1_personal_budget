@@ -17,13 +17,19 @@ Personal Budget Tracker
 6. Exit
 """
 
+transactions = []
+
 while True:
     print(menu)
 
     choice = input("Enter your choice (1-6): ")
 
     if choice == "1":
-        print("Please add income")
+        source = input("Where is the income coming from? ")
+        amount = float(input("Enter the income amount: "))
+        transactions.append({"type": "income", "source": source, "amount": amount})
+        print("Income added successfully.")
+        print(transactions)
     elif choice == "2":
         print("Please add expense")
     elif choice == "3":
