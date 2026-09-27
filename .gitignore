@@ -1,0 +1,43 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# macOS files
+.DS_Store
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# Test / coverage files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build / package files
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.swp
+
+# Optional local data files
+# Uncomment these if your program stores personal budget data locally
+# *.csv
+# *.json
+# *.txt
