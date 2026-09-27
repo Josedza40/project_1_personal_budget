@@ -12,9 +12,8 @@ Personal Budget Tracker
 1. Add Income
 2. Add Expense
 3. View Transactions
-4. View Spending by Category
-5. View Budget Summary
-6. Exit
+4. View Budget Summary
+5. Exit
 """
 
 transactions = []
@@ -22,7 +21,7 @@ transactions = []
 while True:
     print(menu)
 
-    choice = input("Enter your choice (1-6): ")
+    choice = input("Enter your choice (1-5): ")
 
     if choice == "1":
         source = input("Where is the income coming from? ")
@@ -45,8 +44,6 @@ while True:
                 elif transaction["type"] == "expense":
                     print(f"Category: {transaction['category']}, Description: {transaction['description']}, Amount: ${transaction['amount']:.2f}")
     elif choice == "4":
-        print("View spending by category")
-    elif choice == "5":
         total_income = 0
         total_expenses = 0    
         if not transactions:
@@ -62,8 +59,8 @@ while True:
             print(f"Total Expenses: ${total_expenses:.2f}")
             print(f"Remaining Balance: ${total_income - total_expenses:.2f}")
 
-         
-    elif choice == "6":
+
+    elif choice == "5":
         print("Thank you for using the Personal Budget Tracker")
         break
     else:
