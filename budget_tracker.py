@@ -47,7 +47,22 @@ while True:
     elif choice == "4":
         print("View spending by category")
     elif choice == "5":
-        print("Budget summary") 
+        total_income = 0
+        total_expenses = 0    
+        if not transactions:
+            print("No transactions found.")
+        else:
+            for transaction in transactions:
+                if transaction["type"] == "income":
+                    total_income += transaction["amount"]
+                elif transaction["type"] == "expense":
+                    total_expenses += transaction["amount"]
+            print("Budget summary")
+            print(f"Total Income: ${total_income:.2f}")
+            print(f"Total Expenses: ${total_expenses:.2f}")
+            print(f"Remaining Balance: ${total_income - total_expenses:.2f}")
+
+         
     elif choice == "6":
         print("Thank you for using the Personal Budget Tracker")
         break
