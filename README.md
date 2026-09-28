@@ -1,7 +1,7 @@
 # Personal Budget Tracker
 
 **Video Presentation:**  
-I will add the link once it is ready 
+(https://www.youtube.com/watch?v=qtUsUAOxq9E)
 
 ## Description
 
