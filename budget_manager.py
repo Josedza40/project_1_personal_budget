@@ -6,6 +6,7 @@ Starter Code: None.
 Date: 10/30/2026
 """
 
+from transaction import Income, Expense
 
 class BudgetManager:
     """Manage income and expense transactions."""
@@ -23,7 +24,7 @@ class BudgetManager:
         total = 0
 
         for transaction in self.transactions:
-            if transaction.__class__.__name__ == "Income":
+            if isinstance(transaction, Income):
                 total += transaction.amount
 
         return total
@@ -33,7 +34,7 @@ class BudgetManager:
         total = 0
 
         for transaction in self.transactions:
-            if transaction.__class__.__name__ == "Expense":
+            if isinstance(transaction, Expense):
                 total += transaction.amount
 
         return total
