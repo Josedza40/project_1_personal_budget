@@ -39,5 +39,8 @@ dist/
 # Optional local data files
 # Uncomment these if your program stores personal budget data locally
 # *.csv
-# *.json
+.json
 # *.txt
+
+transactions.json
+
