@@ -1,22 +1,18 @@
 # Personal Budget Tracker
 
 **Video Presentation:**  
-(https://www.youtube.com/watch?v=qtUsUAOxq9E)
+https://youtu.be/sDp3E2kWj-E
 
 ## Description
 
-The Personal Budget Tracker is a command-line Python application that allows users to record income and expenses, view their transaction history, and calculate their remaining budget balance.
+The Personal Budget Tracker is a command-line Python program that allows users to add income and expenses, view saved transactions, and view a budget summary.
 
-The project was created to demonstrate the Python concepts covered in Chapters 1-7 of Python Crash Course, including variables, strings, numbers, lists, dictionaries, conditional statements, loops, and user input.
-
+For Project 2, the original Project 1 program was refactored to use functions, classes, multiple modules, JSON data storage, exception handling, and automated testing with pytest.
 
 ## How to Run
 
-1. Make sure Python 3 is installed on your computer.
-2. Download or clone this repository.
-3. Open a terminal or command prompt.
-4. Navigate to the folder containing `budget_tracker.py`.
-5. Run the program using:
+1. Make sure Python 3 is installed.
+2. Install the required packages:
 
 ```bash
-python3 budget_tracker.py
+python -m pip install -r requirements.txt
